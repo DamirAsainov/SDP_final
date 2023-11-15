@@ -1,20 +1,15 @@
 package products;
 
-public class Laptop extends Product{
-    private String processor;
+import factory.Product;
 
-    public Laptop(){};
-    public Laptop(String brand, String model, double price, String processor) {
-        super(brand, model, price);
-        this.processor = processor;
-    }
+public class Laptop implements Product {
+    @Override
+    public void displayInfo() {
 
-    public String getProcessor() {
-        return processor;
     }
 
     @Override
-    public String toString() {
-        return super.toString() + " (Processor: " + processor + ")";
+    public void displayPrice() {
+
     }
 }

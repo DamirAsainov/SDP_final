@@ -1,20 +1,16 @@
 package products;
 
-public class Phone extends Product{
-    private String operatingSystem;
-    public Phone(){};
+import factory.Product;
 
-    public Phone(String brand, String model, double price, String operatingSystem) {
-        super(brand, model, price);
-        this.operatingSystem = operatingSystem;
-    }
+public class Phone implements Product {
 
-    public String getOperatingSystem() {
-        return operatingSystem;
+    @Override
+    public void displayInfo() {
+
     }
 
     @Override
-    public String toString() {
-        return super.toString() + " (OS: " + operatingSystem + ")";
+    public void displayPrice() {
+
     }
 }
