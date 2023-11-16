@@ -2,11 +2,14 @@ import adapter.LegacySystem;
 import adapter.LegacySystemAdapter;
 import adapter.NewSystem;
 import decorator.*;
+import factory.LaptopFactory;
 import factory.Product;
+import factory.ProductFactory;
 import observer.Customer;
 import observer.Observer;
 import observer.StoreNotifier;
 import products.Laptop;
+import products.Phone;
 import singleton.DatabaseConnection;
 import strategy.DiscountStrategy;
 import strategy.RegularCustomerDiscount;
@@ -58,7 +61,8 @@ public class Main {
         // Strategy Pattern
         DiscountStrategy regularCustomerDiscount = new RegularCustomerDiscount();
         DiscountStrategy vipCustomerDiscount = new VIPCustomerDiscount();
-
+        ProductFactory aser = new LaptopFactory();
+        Product nitro5 = aser.createProduct(400,"ultrabook");
         double originalPrice = 100.0;
 
         System.out.println("Original Price: $" + originalPrice);
@@ -81,5 +85,6 @@ public class Main {
         System.out.println("Discounted Product: " + discountedProduct.getDescription() + ", Price: $" + discountedProduct.getPrice());
         System.out.println("Gift Product: " + giftProduct.getDescription() + ", Price: $" + giftProduct.getPrice());
         System.out.println("Discounted Gift Product: " + discountedGiftProduct.getDescription() + ", Price: $" + discountedGiftProduct.getPrice());
+        nitro5.displayInfo();
     }
 }

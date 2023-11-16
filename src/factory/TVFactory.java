@@ -3,7 +3,8 @@ package factory;
 import products.TV;
 
 public class TVFactory extends ProductFactory{
-    public Product createProduct(){
-        return new TV();
+    @Override
+    public Product createProduct(double price, String description) {
+        return new TV(price,description);
     }
 }

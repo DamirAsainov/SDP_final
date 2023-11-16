@@ -6,7 +6,6 @@ public class Phone implements Product {
 
     private double price;
     private String description;
-    public Phone(){};
     public Phone(double price, String description){
         this.description = description;
         this.price = price;

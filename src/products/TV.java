@@ -4,7 +4,6 @@ public class TV implements Product{
 
     private double price;
     private String description;
-    public TV(){};
     public TV(double price, String description){
         this.description = description;
         this.price = price;
