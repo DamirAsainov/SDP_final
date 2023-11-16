@@ -2,5 +2,6 @@ package factory;
 
 public interface Product {
     void displayInfo();
-    void displayPrice();
+    double getPrice();
+    String getDescription();
 }

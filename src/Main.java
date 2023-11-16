@@ -1,12 +1,12 @@
 import adapter.LegacySystem;
 import adapter.LegacySystemAdapter;
 import adapter.NewSystem;
-import decorator.BaseStore;
-import decorator.PremiumStoreDecorator;
-import decorator.Store;
+import decorator.*;
+import factory.Product;
 import observer.Customer;
 import observer.Observer;
 import observer.StoreNotifier;
+import products.Laptop;
 import singleton.DatabaseConnection;
 import strategy.DiscountStrategy;
 import strategy.RegularCustomerDiscount;
@@ -17,6 +17,13 @@ import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("////////////////////////////////////////////" +
+                "\n-----------------Online Shop---------------" +
+                "\n\n1. Display all products" +
+                "\n2. Buy by index" +
+                "\n3. Upgrade account" +
+                "\n4. Add product" +
+                "\n\n/////////////////////////////////////////////");
         // Singleton Pattern
         try {
             Connection connection = DatabaseConnection.getConnection();
@@ -37,12 +44,6 @@ public class Main {
         newSystem.processData();
 
         // Decorator Pattern
-        Store baseStore = new BaseStore();
-        Store premiumStore = new PremiumStoreDecorator(baseStore);
-
-        baseStore.sell();
-        System.out.println("-----");
-        premiumStore.sell();
         System.out.println("////////////////////////////////");
         // Observer Pattern
         StoreNotifier storeNotifier = new StoreNotifier();
@@ -63,5 +64,22 @@ public class Main {
         System.out.println("Original Price: $" + originalPrice);
         System.out.println("Regular Customer Price: $" + regularCustomerDiscount.applyDiscount(originalPrice));
         System.out.println("VIP Customer Price: $" + vipCustomerDiscount.applyDiscount(originalPrice));
+
+
+        System.out.println("///////////////////////////////////////////////////////////" +
+                "\n------------Testing decorator---------------");
+        Product baseProduct = new Laptop(15000, "Acer Swift 3");
+        Product discountedProduct = new DiscountDecorator(baseProduct, 0.1);
+        // Декорируем товар с подарком
+        Product giftProduct = new GiftDecorator(baseProduct, "Wireless Mouse");
+
+        // Декорируем товар с скидкой и подарком
+        Product discountedGiftProduct = new DiscountDecorator(new GiftDecorator(baseProduct, "Wireless Mouse"), 0.2);
+
+        // Выводим информацию о товарах
+        System.out.println("Base Product: " + baseProduct.getDescription() + ", Price: $" + baseProduct.getPrice());
+        System.out.println("Discounted Product: " + discountedProduct.getDescription() + ", Price: $" + discountedProduct.getPrice());
+        System.out.println("Gift Product: " + giftProduct.getDescription() + ", Price: $" + giftProduct.getPrice());
+        System.out.println("Discounted Gift Product: " + discountedGiftProduct.getDescription() + ", Price: $" + discountedGiftProduct.getPrice());
     }
 }
