@@ -7,7 +7,7 @@ import observer.Customer;
 import observer.Observer;
 import observer.StoreNotifier;
 import products.Laptop;
-import singleton.DatabaseConnection;
+import singleton.Database;
 import strategy.DiscountStrategy;
 import strategy.RegularCustomerDiscount;
 import strategy.VIPCustomerDiscount;
@@ -24,13 +24,6 @@ public class Main {
                 "\n3. Upgrade account" +
                 "\n4. Add product" +
                 "\n\n/////////////////////////////////////////////");
-        // Singleton Pattern
-        try {
-            Connection connection = DatabaseConnection.getConnection();
-            // Use the connection for database operations
-        } catch (SQLException e) {
-            System.out.println(e);
-        }
 
         // Factory Pattern
 //        Product phone = (Product) ProductFactory.createProduct("Phone");
@@ -81,5 +74,19 @@ public class Main {
         System.out.println("Discounted Product: " + discountedProduct.getDescription() + ", Price: $" + discountedProduct.getPrice());
         System.out.println("Gift Product: " + giftProduct.getDescription() + ", Price: $" + giftProduct.getPrice());
         System.out.println("Discounted Gift Product: " + discountedGiftProduct.getDescription() + ", Price: $" + discountedGiftProduct.getPrice());
+
+
+        System.out.println("\n/////////////////////////////////////////////" +
+                "\n-----------------testing singleton database---------------------" +
+                "\n");
+        Database database = Database.getInstance();
+        database.addProduct(baseProduct);
+        database.addProduct(discountedProduct);
+        database.addProduct(discountedGiftProduct);
+
+        for(int i = 0; i < database.getProductsLen(); i++){
+            Product pr = database.getProduct(i);
+            System.out.println("Base Product: " + pr.getDescription() + ", Price: $" + pr.getPrice());
+        }
     }
 }
