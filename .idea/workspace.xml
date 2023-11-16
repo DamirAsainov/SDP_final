@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="Decorator pattern">
-      <change afterPath="$PROJECT_DIR$/src/singleton/Database.java" afterDir="false" />
+    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/LaptopFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/LaptopFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/PhoneFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/PhoneFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/ProductFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/ProductFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/TVFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/TVFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/products/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/products/TV.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

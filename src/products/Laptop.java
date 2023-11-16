@@ -5,7 +5,6 @@ import factory.Product;
 public class Laptop implements Product {
     private double price;
     private String description;
-    public Laptop(){};
     public Laptop(double price, String description){
         this.description = description;
         this.price = price;
