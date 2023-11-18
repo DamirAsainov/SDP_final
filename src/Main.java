@@ -8,12 +8,6 @@ import observer.Observer;
 import observer.StoreNotifier;
 import products.Laptop;
 import singleton.Database;
-import strategy.DiscountStrategy;
-import strategy.RegularCustomerDiscount;
-import strategy.VIPCustomerDiscount;
-
-import java.sql.Connection;
-import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) {
@@ -49,16 +43,10 @@ public class Main {
 
         storeNotifier.notifyObservers("New products are available!");
 
-        // Strategy Pattern
-        DiscountStrategy regularCustomerDiscount = new RegularCustomerDiscount();
-        DiscountStrategy vipCustomerDiscount = new VIPCustomerDiscount();
 
         double originalPrice = 100.0;
 
         System.out.println("Original Price: $" + originalPrice);
-        System.out.println("Regular Customer Price: $" + regularCustomerDiscount.applyDiscount(originalPrice));
-        System.out.println("VIP Customer Price: $" + vipCustomerDiscount.applyDiscount(originalPrice));
-
 
         System.out.println("///////////////////////////////////////////////////////////" +
                 "\n------------Testing decorator---------------");
