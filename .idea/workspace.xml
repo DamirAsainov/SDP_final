@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="update in strategy pattern" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -63,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700140080398</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update in strategy pattern">
+      <created>1700290320271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700290320271</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,7 +87,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="singleton database" />
-    <option name="LAST_COMMIT_MESSAGE" value="singleton database" />
+    <MESSAGE value="update in strategy pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="update in strategy pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
