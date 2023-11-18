@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="not final strategy pattern">
-      <change afterPath="$PROJECT_DIR$/src/decorator/BaseProduct.java" afterDir="false" />
+    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="singleton database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorator/DiscountDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/DiscountDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorator/GiftDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/GiftDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorator/ProductDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/ProductDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/KaspiPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -60,6 +61,7 @@
       <updated>1700036703132</updated>
       <workItem from="1700036704688" duration="4322000" />
       <workItem from="1700077393655" duration="972000" />
+      <workItem from="1700327046012" duration="9625000" />
     </task>
     <task id="LOCAL-00001" summary="singleton database">
       <created>1700140080398</created>

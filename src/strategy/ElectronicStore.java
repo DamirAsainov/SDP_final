@@ -1,6 +1,6 @@
 package strategy;
 
-class ElectronicStore {
+public class ElectronicStore {
     private PaymentStrategy paymentStrategy;
 
     public ElectronicStore(PaymentStrategy paymentStrategy) {
