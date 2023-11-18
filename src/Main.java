@@ -2,7 +2,9 @@ import adapter.LegacySystem;
 import adapter.LegacySystemAdapter;
 import adapter.NewSystem;
 import decorator.*;
+import factory.LaptopFactory;
 import factory.Product;
+import factory.ProductFactory;
 import observer.Customer;
 import observer.Observer;
 import observer.StoreNotifier;
@@ -50,16 +52,20 @@ public class Main {
 
         System.out.println("///////////////////////////////////////////////////////////" +
                 "\n------------Testing decorator---------------");
-        Product baseProduct = new Laptop(15000, "Acer Swift 3");
-        Product discountedProduct = new DiscountDecorator(baseProduct, 0.1);
+
+
+        ProductFactory baseProduct = new LaptopFactory(); //создаем фактори конкретного продукта
+        Product acer = baseProduct.createProduct(15000,"game laptop"); //создаем конкретный продукт
+        Product base = new BaseProduct(acer.getPrice(),acer.getDescription()); // передаем значения конкретного продукта в общие продукты.
+        Product discountedProduct = new DiscountDecorator(base, 0.1,storeNotifier);
         // Декорируем товар с подарком
-        Product giftProduct = new GiftDecorator(baseProduct, "Wireless Mouse");
+        Product giftProduct = new GiftDecorator(base, "Wireless Mouse",storeNotifier);
 
         // Декорируем товар с скидкой и подарком
-        Product discountedGiftProduct = new DiscountDecorator(new GiftDecorator(baseProduct, "Wireless Mouse"), 0.2);
+        Product discountedGiftProduct = new DiscountDecorator(new GiftDecorator(acer, "Wireless Mouse",storeNotifier), 0.2,storeNotifier);
 
         // Выводим информацию о товарах
-        System.out.println("Base Product: " + baseProduct.getDescription() + ", Price: $" + baseProduct.getPrice());
+        System.out.println("Base Product: " + base.getDescription() + ", Price: $" + acer.getPrice());
         System.out.println("Discounted Product: " + discountedProduct.getDescription() + ", Price: $" + discountedProduct.getPrice());
         System.out.println("Gift Product: " + giftProduct.getDescription() + ", Price: $" + giftProduct.getPrice());
         System.out.println("Discounted Gift Product: " + discountedGiftProduct.getDescription() + ", Price: $" + discountedGiftProduct.getPrice());
@@ -68,7 +74,7 @@ public class Main {
         System.out.println("////////////////////////////////////////////////////////////" +
                 "\n------------------------------Testing SINGLETON--------------------------\n\n");
         Database database = Database.getInstance();
-        database.addProduct(baseProduct);
+        database.addProduct(base);
         database.addProduct(discountedProduct);
         database.addProduct(discountedGiftProduct);
 

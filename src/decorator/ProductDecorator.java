@@ -1,10 +1,13 @@
 package decorator;
 
 import factory.Product;
+import observer.*;
 
-public class ProductDecorator implements Product {
+abstract class ProductDecorator implements Product {
     protected Product decoratedProduct;
-    public ProductDecorator(Product decoratedProduct) {
+
+    protected StoreNotifier storeNotifier;
+    public ProductDecorator(Product decoratedProduct, StoreNotifier storeNotifier) {
         this.decoratedProduct = decoratedProduct;
     }
 
