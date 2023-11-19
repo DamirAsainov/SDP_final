@@ -1,22 +1,10 @@
-import adapter.LegacySystem;
-import adapter.LegacySystemAdapter;
-import adapter.NewSystem;
+import strategy.*;
+import adapter.*;
+import products.*;
 import decorator.*;
-import factory.LaptopFactory;
-import factory.PhoneFactory;
-import factory.Product;
-import factory.ProductFactory;
-import observer.Customer;
-import observer.Observer;
-import observer.StoreNotifier;
-import products.Laptop;
-import singleton.Database;
-import strategy.CreditCardPayment;
-import strategy.ElectronicStore;
-import strategy.KaspiPayment;
-import strategy.PayPalPayment;
-
-import java.io.IOException;
+import factory.*;
+import singleton.*;
+import observer.*;
 import java.util.Scanner;
 
 public class Main {
@@ -39,9 +27,15 @@ public class Main {
 //        laptop.toString();
 
         // Adapter Pattern
-        NewSystem newSystem = new LegacySystemAdapter(new LegacySystem());
-        newSystem.processData();
+        /*
+        FeedbackSystem existingFeedbackSystem = new DefaultFeedbackSystem();
+        existingFeedbackSystem.submitFeedback("Good service!");
 
+        // Using the new feedback system through the adapter
+        NewFeedbackSystem newFeedbackSystem = new NewFeedbackSystem();
+        FeedbackSystem newFeedbackSystemAdapter = new NewFeedbackSystemAdapter(newFeedbackSystem);
+        newFeedbackSystemAdapter.submitFeedback("Great experience!"); */
+        // НОВЫЙ ДОБАВЛЕННЫЙ ДЕФОЛТ, НАШ ЭТО СТОРЕФИДБЕК. ОБРАЩАЕМ В АДАПТЕРЕ ДЕФОЛТ В СТОРФИДБЕК \\ ПРОВАЙД ---> САБМИТ
         // Decorator Pattern
         System.out.println("////////////////////////////////");
         // Observer Pattern
@@ -83,12 +77,13 @@ public class Main {
         System.out.println("////////////////////////////////////////////////////////////" +
                 "\n------------------------------Testing SINGLETON--------------------------\n\n");
         Database database = Database.getInstance();
-        database.addProduct(base);
-        database.addProduct(discountedProduct);
-        database.addProduct(discountedGiftProduct);
+        ProductManagement productManager = database.getProductManager();
+        productManager.addProduct(base);
+        productManager.addProduct(discountedProduct);
+        productManager.addProduct(discountedGiftProduct);
 
-        for(int i = 0; i < database.getProductsLen(); i++){
-            Product pr = database.getProduct(i);
+        for(int i = 0; i < productManager.getProductsLen(); i++){
+            Product pr = productManager.getProduct(i);
             System.out.println("Base Product: " + pr.getDescription() + ", Price: $" + pr.getPrice());
         }
 
@@ -98,6 +93,7 @@ public class Main {
         boolean exit = false;
         Scanner scanner = new Scanner(System.in);
         Database database = Database.getInstance();
+        ProductManagement productManager = database.getProductManager();
         while (!exit){
             System.out.println("////////////////////////////////////////////" +
                     "\n-----------------Hardware Store---------------" +
@@ -110,15 +106,15 @@ public class Main {
             String input = scanner.nextLine();
             switch (input){
                 case "1":
-                    for(int i = 0; i < database.getProductsLen(); i++){
-                        System.out.println(i + ": "+ database.getProduct(i).getDescription() + " - " + database.getProduct(i).getPrice());
+                    for(int i = 0; i < productManager.getProductsLen(); i++){
+                        System.out.println(i + ": "+ productManager.getProduct(i).getDescription() + " - " + productManager.getProduct(i).getPrice());
                     }
                     break;
                 case "2":
                     System.out.println("Index: ");
                     int index = Integer.parseInt(scanner.nextLine());
-                    if(index >= 0 && index < database.getProductsLen()){
-                        Product product = database.getProduct(index);
+                    if(index >= 0 && index < productManager.getProductsLen()){
+                        Product product = productManager.getProduct(index);
                         System.out.println("Product:" + product.getDescription() + "\nPrice: " + product.getPrice() + "\n\nWhich payment do you prefer?\n1. Kaspi Payment\n2. Credit Card\n3. PayPal");
                         String payInput = scanner.nextLine();
                         ElectronicStore payment = null;
@@ -161,6 +157,7 @@ public class Main {
         boolean exit = false;
         Scanner scanner = new Scanner(System.in);
         Database database = Database.getInstance();
+        ProductManagement productManager = database.getProductManager();
         while (!exit){
             System.out.println("////////////////////////////////////////////" +
                     "\n-----------------Hardware Store---------------" +
@@ -173,8 +170,8 @@ public class Main {
             String input = scanner.nextLine();
             switch (input){
                 case "1":
-                    for(int i = 0; i < database.getProductsLen(); i++){
-                        System.out.println(i + ": "+ database.getProduct(i).getDescription());
+                    for(int i = 0; i < productManager.getProductsLen(); i++){
+                        System.out.println(i + ": "+ productManager.getProduct(i).getDescription());
                     }
                     break;
                 case "2":
@@ -212,12 +209,12 @@ public class Main {
                             System.out.println("Wrong input");
                             continue;
                     }
-                    database.addProduct(newProduct);
+                    productManager.addProduct(newProduct);
                     break;
                 case "3":
                     System.out.println("Write product index");
                     try {
-                        database.deleteProduct(scanner.nextInt());
+                        productManager.deleteProduct(scanner.nextInt());
                     }catch (Exception e){
                         System.out.println("Wrong index");
                     }

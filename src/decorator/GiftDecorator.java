@@ -14,6 +14,8 @@ public class GiftDecorator extends ProductDecorator{
     public String getDescription() {
         return decoratedProduct.getDescription() + " with a free gift: " + gift;
     }
-    private void notifyGift() {     if (storeNotifier != null) {
-        storeNotifier.notifyObservers("Gift added: " + gift + " with " + decoratedProduct.getDescription());}}
+    private void notifyGift() {
+        if (storeNotifier != null) {
+        storeNotifier.notifyObservers("Gift added: " + gift + " with " + decoratedProduct.getDescription());}
+    }
 }

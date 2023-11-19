@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="singleton database">
+      <change afterPath="$PROJECT_DIR$/src/adapter/DefaultFeedbackSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapter/FeedbackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapter/StoreFeedbackAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapter/StoreFeedbackInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapter/StoreFeedbackSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/ProductManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/singleton/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_11_2023_16_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_11_2023_16_11__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/KaspiPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapter/LegacySystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapter/LegacySystemAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapter/NewSystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorator/GiftDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorator/GiftDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/singleton/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/singleton/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,16 +115,5 @@
     <MESSAGE value="update in strategy pattern" />
     <MESSAGE value="not final strategy pattern" />
     <option name="LAST_COMMIT_MESSAGE" value="not final strategy pattern" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/adapter/LegacySystemAdapter.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
