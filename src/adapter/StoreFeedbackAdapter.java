@@ -8,9 +8,8 @@ public class StoreFeedbackAdapter implements StoreFeedbackInterface{
     }
 
     @Override
-    public void submitFeedback(String feedback) {
-        // Assume a default customer name for simplicity
-        String defaultCustomerName = "Anonymous Customer";
+    public void submitFeedback(String name,String feedback) {
+        String defaultCustomerName = name;
         defaultFeedbackSystem.provideFeedback(defaultCustomerName, feedback);
     }
 }

@@ -2,7 +2,7 @@ package adapter;
 
 public class StoreFeedbackSystem implements StoreFeedbackInterface {
 
-    public void submitFeedback(String feedback) {
-        System.out.println("DefaultFeedbackSystem received feedback: " + feedback);
+    public void submitFeedback(String name,String feedback) {
+        System.out.println("System received feedback: " + feedback);
     }
 }

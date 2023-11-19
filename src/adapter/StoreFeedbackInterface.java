@@ -1,5 +1,5 @@
 package adapter;
 
-interface StoreFeedbackInterface {
-    void submitFeedback(String feedback);
+public interface StoreFeedbackInterface {
+    void submitFeedback(String name,String feedback);
 }

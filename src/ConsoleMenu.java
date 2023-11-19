@@ -1,3 +1,6 @@
+import adapter.DefaultFeedbackSystem;
+import adapter.FeedbackInterface;
+import adapter.*;
 import decorator.DiscountDecorator;
 import decorator.GiftDecorator;
 import factory.LaptopFactory;
@@ -52,7 +55,19 @@ public class ConsoleMenu {
                     buyByIndex();
                     break;
                 case "3":
-                    System.out.println("3 Abylai nado sdelat");
+                    /*
+                            TwoDFigure rectangle = new Rectangle(4,4);
+                            ThreeDShape adaptedShape = new TwoDToThreeDAdapter(rectangle,4);
+                            System.out.println("area is "+rectangle.calculateArea());
+                            System.out.println("volume is "+adaptedShape.calculateVolume());
+                     */
+                    System.out.println("Name:");
+                    String name = scanner.nextLine();
+                    System.out.println("Comment:");
+                    String comment = scanner.nextLine();
+                    FeedbackInterface feedback = new DefaultFeedbackSystem();
+                    StoreFeedbackInterface storeFeedback = new StoreFeedbackAdapter((DefaultFeedbackSystem) feedback);
+                    storeFeedback.submitFeedback(name,comment);
                     break;
                 case "4":
                     adminMode();
@@ -65,7 +80,7 @@ public class ConsoleMenu {
 
     public void adminMode(){
         while (!exit){
-            System.out.println("////////////////////////////////////////////" +
+            System.out.println("\n////////////////////////////////////////////" +
                     "\n-----------------Hardware Store---------------" +
                     "\n\n#- - -ADMIN MODE- - -#" +
                     "\n1. Display all products" +
