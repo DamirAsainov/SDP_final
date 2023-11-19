@@ -1,4 +1,4 @@
-# Welcome to the Electronics store Java Project!
+# Welcome to the Hardware store Java Project!
 # Group: 
 - SE-2216
 # Team Members:
@@ -6,11 +6,14 @@
 - Damir Asainov
 
 # Project Overview:
-The hardware store system is a comprehensive solution designed to manage and facilitate the sale of electronic products. It provides a seamless platform for customers to explore, purchase, and share feedback on a variety of electronic items.
+Our project revolves around the creation of a comprehensive hardware store system, designed to manage and facilitate the sale of electronic products. The primary purpose is to provide a seamless platform for customers to explore, purchase, and share feedback on a variety of electronic items. 
 
 ## Purpose:
 The primary goal is to offer customers a user-friendly interface for interacting with the hardware store, ensuring a smooth experience from product discovery to purchase and post-purchase feedback.
 
+## Importance of Design Patterns:
+- In the realm of software development, the implementation of design patterns plays a pivotal role. Design patterns are proven solutions to recurring design problems, offering a structured approach to building robust and maintainable software systems. By incorporating design patterns, we aim to enhance the scalability, flexibility, and maintainability of our hardware store system.
+  
 ## Objectives:
 
 ### Display Products:
@@ -23,11 +26,17 @@ The primary goal is to offer customers a user-friendly interface for interacting
 ### Feedback System:
 - Allow customers to leave feedback on purchased products.
 
+### Implementation of Design Patterns:
+- Demonstrate the practical application of various design patterns such as Observer, Decorator, Strategy, and Factory patterns in real-world software development.
+
+
 # Main Body:
 
 ## Features and Design Patterns:
 
-### 1. Feedback System:
+### 1. Adapter pattern:
+![image](https://github.com/DamirAsainov/SDP_final/assets/121009414/987b0708-040c-40e7-9c77-5ac7308624d5)
+
 - **Classes:** `DefaultFeedbackSystem`, `FeedbackInterface`
 - **Description:** Handles customer feedback.
 - **Usage:** Utilized in the `StoreFeedbackAdapter` to adapt feedback for the store.
@@ -81,10 +90,11 @@ The primary goal is to offer customers a user-friendly interface for interacting
 # Conclusion:
 
 ## Key Points:
-- The project incorporates various design patterns, including Decorator, Observer, Strategy, and Factory patterns.
+- The project incorporates various design patterns, including Decorator, Observer, Strategy, Singleton, Adapter and Factory patterns.
 
 ## Project Outcomes:
 - Successful implementation of a hardware store system.
+- Integration of various design patterns for modular and maintainable code.
 
 ## Challenges Faced:
 - We had a hard time putting together the different software design patterns in our project because we didn't fully understand them. It's crucial to learn more before taking on complex tasks.
