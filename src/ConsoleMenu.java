@@ -15,8 +15,6 @@ import strategy.CreditCardPayment;
 import strategy.ElectronicStore;
 import strategy.KaspiPayment;
 import strategy.PayPalPayment;
-
-import java.io.File;
 import java.util.Scanner;
 
 public class ConsoleMenu {
@@ -57,12 +55,6 @@ public class ConsoleMenu {
                     break;
                 case "3":
                     System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n");
-                    /*
-                            TwoDFigure rectangle = new Rectangle(4,4);
-                            ThreeDShape adaptedShape = new TwoDToThreeDAdapter(rectangle,4);
-                            System.out.println("area is "+rectangle.calculateArea());
-                            System.out.println("volume is "+adaptedShape.calculateVolume());
-                     */
                     System.out.println("Name:");
                     String name = scanner.nextLine();
                     System.out.println("Comment:");
