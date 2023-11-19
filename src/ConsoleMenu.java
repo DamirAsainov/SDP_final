@@ -47,6 +47,7 @@ public class ConsoleMenu {
             String input = scanner.nextLine();
             switch (input){
                 case "1":
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n");
                     for(int i = 0; i < productManager.getProductsLen(); i++){
                         System.out.println(i + ": "+ productManager.getProduct(i).getDescription() + " - " + productManager.getProduct(i).getPrice());
                     }
@@ -55,6 +56,7 @@ public class ConsoleMenu {
                     buyByIndex();
                     break;
                 case "3":
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n");
                     /*
                             TwoDFigure rectangle = new Rectangle(4,4);
                             ThreeDShape adaptedShape = new TwoDToThreeDAdapter(rectangle,4);
@@ -92,19 +94,22 @@ public class ConsoleMenu {
             String input = scanner.nextLine();
             switch (input) {
                 case "1" -> {
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n");
                     for (int i = 0; i < productManager.getProductsLen(); i++) {
                         System.out.println(i + ": " + productManager.getProduct(i).getDescription());
                     }
                 }
                 case "2" -> {
                     Product newProduct = null;
-                    System.out.println("Which product you want add\n1. Laptop\n2. Phone\n3. TV");
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                            "Which product you want add\n1. Laptop\n2. Phone\n3. TV");
                     String prInput = scanner.nextLine();
                     String input1;
                     double price;
                     switch (prInput) {
                         case "1" -> {
-                            System.out.println("Laptop title and description");
+                            System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                                    "Laptop title and description");
                             input1 = scanner.nextLine();
                             System.out.println("Price: ");
                             price = Double.parseDouble(scanner.nextLine());
@@ -112,7 +117,8 @@ public class ConsoleMenu {
                             newProduct = laptopFactory.createProduct(price, input1);
                         }
                         case "2" -> {
-                            System.out.println("Phone title and description");
+                            System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                                    "Phone title and description");
                             input1 = scanner.nextLine();
                             System.out.println("Price: ");
                             price = Double.parseDouble(scanner.nextLine());
@@ -120,7 +126,8 @@ public class ConsoleMenu {
                             newProduct = phoneFactory.createProduct(price, input1);
                         }
                         case "3" -> {
-                            System.out.println("TV title and description");
+                            System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                                    "TV title and description");
                             input1 = scanner.nextLine();
                             System.out.println("Price: ");
                             price = Double.parseDouble(scanner.nextLine());
@@ -135,7 +142,8 @@ public class ConsoleMenu {
                     productManager.addProduct(newProduct);
                 }
                 case "3" -> {
-                    System.out.println("Write product index");
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                            "Write product index");
                     try {
                         productManager.deleteProduct(scanner.nextInt());
                     } catch (Exception e) {
@@ -143,7 +151,8 @@ public class ConsoleMenu {
                     }
                 }
                 case "4" -> {
-                    System.out.println("1. Set discount" +
+                    System.out.println("//////////////////////////////////////////////////////\n-----------------Hardware Store---------------\n\n" +
+                            "1. Set discount" +
                             "\n2. Set gift" +
                             "\n3. Set discount and gift");
                     switch (scanner.nextLine()){
@@ -181,7 +190,8 @@ public class ConsoleMenu {
     }
 
     private void buyByIndex(){
-        System.out.println("Index: ");
+        System.out.println("//////////////////////////////////////////////////////\n\n\n" +
+                "Index: ");
         int index = Integer.parseInt(scanner.nextLine());
         if(index >= 0 && index < productManager.getProductsLen()) {
             Product product = productManager.getProduct(index);

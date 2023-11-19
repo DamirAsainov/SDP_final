@@ -1,0 +1,65 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"cf89d784-d85a-40ec-9724-76185b1aa258\" name=\"Changes\" comment=\"singleton database\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Main.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/strategy/CashPayment.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/strategy/KaspiPayment.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/strategy/CreditCardPayment.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/strategy/CreditCardPayment.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/strategy/ElectronicStore.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/strategy/ElectronicStore.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/strategy/PayPalPayment.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/strategy/PayPalPayment.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2YCjvh6rdn162WcsEHbvgZALPxe\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"cf89d784-d85a-40ec-9724-76185b1aa258\" name=\"Changes\" comment=\"\" />\r\n      <created>1700036703132</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700036703132</updated>\r\n      <workItem from=\"1700036704688\" duration=\"4322000\" />\r\n      <workItem from=\"1700077393655\" duration=\"972000\" />\r\n      <workItem from=\"1700327046012\" duration=\"9625000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"singleton database\">\r\n      <created>1700140080398</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700140080398</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"update in strategy pattern\">\r\n      <created>1700290320271</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700290320271</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"not final strategy pattern\">\r\n      <created>1700290614223</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700290614223</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"singleton database\" />\r\n    <MESSAGE value=\"update in strategy pattern\" />\r\n    <MESSAGE value=\"not final strategy pattern\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"not final strategy pattern\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/adapter/LegacySystemAdapter.java</url>\r\n          <line>8</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6268b086f056b3b09c584c7f5ade55825b6666a7)
++++ b/.idea/workspace.xml	(date 1700386072915)
+@@ -4,13 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="singleton database">
++    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="main while code">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/strategy/CashPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/KaspiPayment.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/CreditCardPayment.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/ElectronicStore.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/PayPalPayment.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -61,7 +56,8 @@
+       <updated>1700036703132</updated>
+       <workItem from="1700036704688" duration="4322000" />
+       <workItem from="1700077393655" duration="972000" />
+-      <workItem from="1700327046012" duration="9625000" />
++      <workItem from="1700327046012" duration="10011000" />
++      <workItem from="1700385615091" duration="454000" />
+     </task>
+     <task id="LOCAL-00001" summary="singleton database">
+       <created>1700140080398</created>
+@@ -84,7 +80,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1700290614223</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="main while code">
++      <created>1700340304765</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1700340304765</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -102,10 +105,11 @@
+     </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+-    <MESSAGE value="singleton database" />
+     <MESSAGE value="update in strategy pattern" />
+     <MESSAGE value="not final strategy pattern" />
+-    <option name="LAST_COMMIT_MESSAGE" value="not final strategy pattern" />
++    <MESSAGE value="singleton database" />
++    <MESSAGE value="main while code" />
++    <option name="LAST_COMMIT_MESSAGE" value="main while code" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
