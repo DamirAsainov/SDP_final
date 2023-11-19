@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="all main functions">
+    <list default="true" id="cf89d784-d85a-40ec-9724-76185b1aa258" name="Changes" comment="consoleMenu update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/LaptopFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/LaptopFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/PhoneFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/PhoneFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/ProductFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/ProductFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factory/TVFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/factory/TVFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/StoreNotifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/StoreNotifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700290614223</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="consoleMenu update">
+      <created>1700413000554</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700413000554</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +116,8 @@
     <MESSAGE value="singleton database" />
     <MESSAGE value="update in strategy pattern" />
     <MESSAGE value="not final strategy pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="not final strategy pattern" />
+    <MESSAGE value="consoleMenu update" />
+    <option name="LAST_COMMIT_MESSAGE" value="consoleMenu update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
