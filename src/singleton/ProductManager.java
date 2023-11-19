@@ -38,4 +38,9 @@ public class ProductManager implements ProductManagement {
     public int getProductsLen() {
         return productStorage.size();
     }
+
+    @Override
+    public void changeByIndex(int index, Product product) {
+        productStorage.set(index,product);
+    }
 }

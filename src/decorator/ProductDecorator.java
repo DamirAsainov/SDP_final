@@ -9,6 +9,7 @@ abstract class ProductDecorator implements Product {
     protected StoreNotifier storeNotifier;
     public ProductDecorator(Product decoratedProduct, StoreNotifier storeNotifier) {
         this.decoratedProduct = decoratedProduct;
+        this.storeNotifier = storeNotifier;
     }
 
 

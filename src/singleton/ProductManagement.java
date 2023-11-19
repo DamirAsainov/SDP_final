@@ -8,4 +8,5 @@ public interface ProductManagement {
     int getProductID(Product product);
     Product getProduct(int index);
     int getProductsLen();
+    void changeByIndex(int index, Product product);
 }
